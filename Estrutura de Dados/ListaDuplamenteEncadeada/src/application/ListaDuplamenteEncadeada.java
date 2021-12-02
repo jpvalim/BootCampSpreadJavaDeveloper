@@ -18,6 +18,9 @@ public class ListaDuplamenteEncadeada <T> {
 	}
 	
 	public T get(int index) {
+		if(index > size()) {
+			throw new NullPointerException("A lista não possui o indice informado. Indice: " + index);
+		}
 		return getNo(index).getConteudo();
 	}
 	
@@ -83,15 +86,7 @@ public class ListaDuplamenteEncadeada <T> {
 		tamanhoLista++;
 	}
 	
-	private NoDuplo<T> getNo(int index){
-		NoDuplo<T> noAuxiliar = primeiroNo;
 	
-		for(int i =0; (i<index) && (noAuxiliar != null); i++) {
-			noAuxiliar = noAuxiliar.getNoProximo();
-		}
-		return noAuxiliar;
-	}
-
 	@Override
 	public String toString() {
 		String stringRetorno = "ListaDuplamenteEncadeada [";
@@ -106,5 +101,16 @@ public class ListaDuplamenteEncadeada <T> {
 		return stringRetorno;
 	}
 	
+	private NoDuplo<T> getNo(int index){
+		
+			NoDuplo<T> noAuxiliar = primeiroNo;
+			
+			for(int i =0; (i<index) && (noAuxiliar != null); i++) {
+				noAuxiliar = noAuxiliar.getNoProximo();
+			}
+			return noAuxiliar;
+		
+		
+	}
 
 }

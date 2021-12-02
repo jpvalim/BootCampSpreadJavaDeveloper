@@ -1,0 +1,17 @@
+package application;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Pilha minhaPilha=new Pilha();
+		No noUm = new No(1);
+		No noDois = new No(2);
+		minhaPilha.push(noUm);
+		minhaPilha.push(noDois);
+		System.out.println(minhaPilha);
+		
+		
+
+	}
+
+}

@@ -1,0 +1,15 @@
+package application;
+
+
+public class Main {
+
+	public static void main(String[] args) {
+		Fila<Integer> minhaFila = new Fila<>();
+		
+		minhaFila.enqueue(new No<Integer>(1));
+		System.out.println(minhaFila);
+		
+
+	}
+
+}

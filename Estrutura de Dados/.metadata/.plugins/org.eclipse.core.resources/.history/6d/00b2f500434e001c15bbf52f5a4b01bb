@@ -1,0 +1,25 @@
+package application;
+
+
+public class Main {
+
+	public static void main(String[] args) {
+		Fila<Integer> minhaFila = new Fila<>();
+		
+		minhaFila.enqueue(1);
+		minhaFila.enqueue(1);
+		minhaFila.enqueue(1);
+		minhaFila.enqueue(1);
+		minhaFila.enqueue(1);
+		minhaFila.enqueue(1);
+		
+		
+		
+		System.out.println(minhaFila);
+		minhaFila.dequeue();
+		System.out.println(minhaFila);
+		
+
+	}
+
+}

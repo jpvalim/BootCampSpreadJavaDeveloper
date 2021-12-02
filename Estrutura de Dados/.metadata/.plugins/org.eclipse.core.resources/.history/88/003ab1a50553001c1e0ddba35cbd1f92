@@ -1,0 +1,15 @@
+package application;
+
+public class ListaCircular<T> {
+	private No<T> cabeca;
+	private No<T> cauda;
+	private int tamanhoLista;
+	
+	public ListaCircular() {
+		cabeca = null;
+		cauda = null;
+		tamanhoLista = 0;
+	}
+	
+	
+}

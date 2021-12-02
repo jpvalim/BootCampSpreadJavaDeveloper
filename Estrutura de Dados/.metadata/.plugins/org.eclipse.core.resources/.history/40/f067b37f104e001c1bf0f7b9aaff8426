@@ -1,0 +1,14 @@
+package application;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Pilha minhaPilha=new Pilha();
+		No noUm = new No(1);
+		minhaPilha.push(noUm);
+		System.out.println(minhaPilha);
+		
+
+	}
+
+}

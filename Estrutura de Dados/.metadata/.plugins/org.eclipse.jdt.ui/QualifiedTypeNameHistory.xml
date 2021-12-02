@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="application.ListaEncadeada"/>
+    <fullyQualifiedTypeName name="application.NoDuplo"/>
+    <fullyQualifiedTypeName name="application.ListaDuplamenteEncadeada"/>
+    <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
+    <fullyQualifiedTypeName name="java.lang.IndexOutOfBoundsException"/>
+</qualifiedTypeNameHistroy>

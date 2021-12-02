@@ -1,0 +1,35 @@
+package application;
+
+public class Fila<T> {
+	private T dado;
+	private No<T> refNoEntradaFila;
+	
+	public Fila() {
+		this.refNoEntradaFila = null;
+	}
+
+	public No<T> first(){
+		if(!isEmpty()) {
+			No<T> primeiroNo = refNoEntradaFila;
+			while(true) {
+				if (primeiroNo != null) 
+					primeiroNo = refNoEntradaFila.getRefNo();
+				else
+					break;
+			}
+			return primeiroNo;
+		}else {
+			return null;
+		}
+	}
+	
+	public void enquee(No<T> novoNo) {
+		novoNo.setRefNo(refNoEntradaFila);
+		refNoEntradaFila = novoNo;
+	}
+	
+	public boolean isEmpty() {
+		return refNoEntradaFila == null ? true : false;
+	}
+		
+}

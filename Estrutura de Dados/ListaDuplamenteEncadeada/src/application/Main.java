@@ -19,6 +19,7 @@ public class Main {
 		lde.add(23, 3);
 		System.out.println(lde);
 		System.out.println(lde.size());
+		System.out.println(lde.get(18));
 	}
 
 }

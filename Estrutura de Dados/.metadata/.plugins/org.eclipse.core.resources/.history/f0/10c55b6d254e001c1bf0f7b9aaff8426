@@ -1,0 +1,24 @@
+package application;
+
+public class Fila<T> {
+	private T dado;
+	private No<T> refNoEntradaFila;
+	
+	public Fila() {
+		this.refNoEntradaFila = null;
+	}
+
+	public void enquee(No<T> novoNo) {
+		novoNo.setRefNo(refNoEntradaFila);
+		refNoEntradaFila = novoNo;
+	}
+	
+	public boolean isEmpty() {
+		return refNoEntradaFila == null ? true : false;
+	}
+	
+	
+	
+	
+	
+}

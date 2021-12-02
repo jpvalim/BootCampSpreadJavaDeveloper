@@ -1,0 +1,9 @@
+package application;
+
+public class ListaCircular<T> {
+	private No<T> cabeca;
+	private No<T> cauda;
+	
+	
+	
+}

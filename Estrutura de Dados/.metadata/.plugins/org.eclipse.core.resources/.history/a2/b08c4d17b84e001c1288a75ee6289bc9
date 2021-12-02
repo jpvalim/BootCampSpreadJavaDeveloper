@@ -1,0 +1,7 @@
+package application;
+
+public class No<T> {
+	private T conteudo;
+	private No proximoNo;
+	
+}
