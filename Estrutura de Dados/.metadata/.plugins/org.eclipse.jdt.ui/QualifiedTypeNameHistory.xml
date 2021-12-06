@@ -6,4 +6,5 @@
     <fullyQualifiedTypeName name="application.ListaDuplamenteEncadeada"/>
     <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
     <fullyQualifiedTypeName name="java.lang.IndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="application.ListaCircular"/>
 </qualifiedTypeNameHistroy>

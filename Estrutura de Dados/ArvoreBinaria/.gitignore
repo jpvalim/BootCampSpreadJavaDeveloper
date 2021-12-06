@@ -27,7 +27,6 @@ hs_err_pid*
 .project
 .settings
 
-
 #InteliJ
 .idea
 /out/
