@@ -1,0 +1,47 @@
+CREATE TABLE PRODUTOS (
+	CODIGO INT NOT NULL
+	,DESCRICAO VARCHAR(50) NOT NULL
+	,EAN VARCHAR(15) NOT NULL
+	,DATA_VALIDADE DATETIME
+	,IND_INATIVO INT NOT NULL (DEFAULT 0)
+)
+;
+
+ALTER TABLE PRODUTOS 
+ ADD CONSTRAINT PK_PRODUTOS 
+  PRIMARY KEY (CODIGO)
+;
+
+'CRIAR UM ÍNDICE'
+
+CREATE INDEX IDX_PRODUTOS_EAN
+ ON PRODUTOS (EAN)
+;
+
+'OBRIGADO COLOCAR TODOS OS CAMPOS QUANDO NÃO COLOCA O NOME DOS CAMPOS
+INSERT INTO PRODUTOS VALUES (1,'NOME DO PRODUTO', GETDATE(),'1234567890', 0 );
+
+'DEIXAR CAMPOS QUE ACEITAM NULO PRECISA COLOCAR O NOME DOS CAMPOS
+INSERT INTO PRODUTOS(CODIGO, DESCRICAO, EAN) VALUES (2,'NOME DO PRODUTO 2','1234567890' );
+
+
+Auto incremento não é padrão em todos os bancos de dados.
+Criar uma rotina para controlar a geração dos códigos.
+
+Boolean não existem em alguns bancos de dados.
+Códigos que podem começar com zero não podemos usar como número mas como String (VarChar)
+Virgula no começo, somente para a questão de comentar uma linha não precisaria mexer no código inteiro. (Não é padrão)
+
+Criar índice para o campo EAN porque provavelmente será um campo que será sempre utilizado nas buscas- quando cria o índice para o campo melhora o desempenho das buscas.
+
+LIKE é a consulta mais lenta em um banco de dados. (Não deveria usar o like sem o where)
+'%produto' - inicia com qualquer coisa e produto no final.
+'produto%' - inicia com produto e termina com qualquer coisa.
+LIKE = consulta não indexada.
+
+CREATE TABLE LOJA (
+	CODIGO INT NOT NULL
+	,NOME VARCHAR(50) NOT NULL
+	,IND_INATIVO INT NOT NULL (DEFAULT 0)
+
+)

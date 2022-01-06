@@ -1,0 +1,4 @@
+REST - Padrão / Metodologia
+RESTFUL - Aplicação que usa o padrão rest
+
+
